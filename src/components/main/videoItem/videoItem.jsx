@@ -1,4 +1,5 @@
 import React from 'react';
+import style from './videoItem.module.css'
 
 const numberToString = (number) => {
     const inputNumber  = number < 0 ? false : number;
@@ -61,29 +62,29 @@ const beforeDateString = (publishedAt) => {
 
 const PlayListItem = (props) => {
     return(
-        <div className="list-item">
-            <div className="box__item">
-                <a href="" className="link__thumnail">
-                    <div className="box__thumnail">
-                        <img className="image__thumnail" src={props.videoInfo.thumbnails.high.url} />
+        <div className={style.listitem}>
+            <div className={style.box__item}>
+                <a href="" className={style.link__thumnail}>
+                    <div className={style.box__thumnail}>
+                        <img className={style.image__thumnail} src={props.videoInfo.thumbnails.high.url} />
                     </div>
                 </a>
-                <div className="box__information">
-                    <div className="box__detail-information">
-                        <a href="" className="link__channel">
-                            <div className="box__channel-thumnail">
+                <div className={style.box__information}>
+                    <div className={style.box__detailinformation}>
+                        <a href="" className={style.link__channel}>
+                            <div className={style.box__channelthumnail}>
                             </div>
                         </a>
-                        <a href="" className="link__information">
-                            <div className="box__title">
+                        <a href="" className={style.link__information}>
+                            <div className={style.box__title}>
                                 {props.videoInfo.title}
                             </div>
-                            <div className="box__channel">
+                            <div className={style.box__channel}>
                                 {props.videoInfo.channelTitle}
                             </div>
-                            <div className="box__video-meta">
-                                <span className="text__view">조회수 {numberToString(props.videoStatistics.viewCount)}회</span>
-                                <span className="text__date"><span className="for-a11y">영상업로드 일자 : </span>{beforeDateString(props.videoInfo.publishedAt)}</span>
+                            <div className={style.box__videometa}>
+                                <span className={style.text__view}>조회수 {numberToString(props.videoStatistics.viewCount)}회</span>
+                                <span className={style.text__date}><span className={style.forA11y}>영상업로드 일자 : </span>{beforeDateString(props.videoInfo.publishedAt)}</span>
                             </div>
                         </a>
                     </div>

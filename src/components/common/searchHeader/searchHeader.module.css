@@ -1,0 +1,50 @@
+.forA11y{ position: absolute;width: 1px;height: 1px;margin: -1px;padding: 0;border: 0;clip: rect(0 0 0 0);overflow: hidden;text-indent: -5000em;}
+
+.section__header{
+    overflow:hidden;
+    height:56px;
+    padding:0 10px;
+    border-bottom:1px solid #e5e5e5;
+  }
+  .section__header--active{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+  }
+  .section__header .box__logo{
+    float:left;
+    width:120px;
+    height:56px;
+  }
+  .section__header .box__search{
+    padding:13px 0 0 10px;
+  }
+  .box__header{
+    max-width:1280px;
+    margin:0 auto;
+    overflow:hidden;
+  }
+  
+  .box__search{
+    overflow: hidden;
+  }
+  
+  .form__input{
+    flex:1;
+    padding:0 10px;
+    height:30px;
+    border:1px solid #ccc;
+  }
+  .button__search{
+    width:65px;
+    height:30px;
+    background-color:#727272;
+    color:#fff;
+  }
+  
+  .form__box{
+    display:block;
+    width:100%;
+    display:flex;
+  }
